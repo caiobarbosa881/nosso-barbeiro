@@ -1,26 +1,25 @@
 $(function() {
     $('#autoWidth').lightSlider({
-      item:4,
-      slideMove:2,
-      easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-      speed:600,
-      responsive : [
-          {
-              breakpoint:800,
-              settings: {
-                  item:3,
-                  slideMove:1,
-                  slideMargin:6,
-                }
-          },
-          {
-              breakpoint:480,
-              settings: {
-                  item:2,
-                  slideMove:1
-                }
-          }
-      ]
+     
 }); 
+$('#light-slider').lightSlider({
+  addClass: 'center-thumbs',
+});
     
+  });
+
+  $( window ).on('resize load', function(){
+    if($(window).width() < 1000)
+    {
+      $(".slider-img").width( 400 );
+      $('#autoWidth').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        loop:true
+      })
+    } else {
+      $(".slider-img").width( "unset");
+      $('#autoWidth').lightSlider( "unset" );
+    }
   });
