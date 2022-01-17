@@ -7,10 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
-    <script type="text/javascript" src="script/Jquery.js"></script>
-    <script type="text/javascript" src="script/lightslider.js"></script>
-    <script type="text/javascript" src="script/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 
 <body>
@@ -27,9 +25,6 @@
                     <ul class="navigation">
                         <a href="#">
                             <li>INÍCIO</li>
-                        </a>
-                        <a href="#">
-                            <li>SOBRE</li>
                         </a>
                         <a href="#">
                             <li>SERVIÇOS</li>
@@ -53,16 +48,20 @@
     </header>
     <script src="script/mobile-navbar.js"></script>
 
-   
-                
+    <div class="home_container">
 
-            
+        <div class="haircut-slider">
+            <img class="slider" src="img/corte1.jpg" alt="haircut 1">
+            <img class="slider" src="img/corte2.jpg" alt="haircut 2">
+            <img class="slider" src="img/corte3.jpg" alt="haircut 3">
+            <img class="slider" src="img/corte4.jpg" alt="haircut 4">
+        </div>
 
-               
-   
+        <div id="arrow-prev" class="arrow"></div>
+        <div id="watch-name" class="description"></div>
+        <div id="arrow-next" class="arrow"></div>
+
     </div>
-
-
     <div class="nossos_servicos">
         <h2>Nossos Serviços</h2>
     </div>
@@ -72,7 +71,7 @@
             <div class="img-area"></div>
             <div class="img-text">
                <span class="header-text"><strong>Barbear</strong></span>
-                <p>A barba está em alta e muitos homens têm aderido a essa tendência, porém, é preciso investir em cuidados que a mantenham bonita e saudável. Para isso, é necessário utilizar os produtos certos, levando em consideração o tipo de pele de cada homem, para que ela não seja prejudicada.</p>
+                <p>A barba está em alta e muitos homens têm aderido a essa tendência, porém, é preciso investir em cuidados que a mantenham bonita e saudável.</p>
             </div>
         </div>
 
@@ -80,15 +79,15 @@
             <div class="img-area"></div>
             <div class="img-text">
                <span class="header-text"><strong>Cortar</strong></span>
-                <p>Fazer um novo corte ou manter a manutenção semanal ou mensal daquele que você já tem é uma ótima forma de manter o visual apresentável, é necessário visitar profissionais experientes para manter uma simetria e estilo bem feitos.</p>
+                <p>Fazer um novo corte ou manter a manutenção semanal ou mensal daquele que você já tem é uma ótima forma de manter o visual apresentável.</p>
             </div>
         </div>
 
         <div class="single-box">
             <div class="img-area"></div>
             <div class="img-text">
-               <span class="header-text"><strong>Navalhar</strong></span>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore accusantium ullam culpa est, impedit libero unde tempore dolor esse similique quibusdam laboriosam rem ipsum, quaerat deserunt quia fugit consequuntur non!</p>
+               <span class="header-text"><strong>Hidratar</strong></span>
+                <p>A hidratação é responsável por repor a água e os nutrientes do cabelo que são perdidos diariamente com a química, poluição, radiação solar e entre outros.</p>
             </div>
         </div>
     </div>
@@ -117,7 +116,7 @@
 
 
     <script type="text/javascript" src="script/Jquery.js"></script>
-    <script type="text/javascript" src="script/lightslider.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="script/script.js"></script>
 </body>
 </html>
