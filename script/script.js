@@ -6,5 +6,17 @@ $(function(){
     centerMode: true,
     prevArrow: $("#arrow-prev"),
     nextArrow: $("#arrow-next"),
+    responsive: [
+      {
+        breakpoint: 700 ,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 })
+function show() {
+ 
+}
+
