@@ -16,7 +16,3 @@ $(function(){
     ]
   });
 })
-function show() {
- 
-}
-
