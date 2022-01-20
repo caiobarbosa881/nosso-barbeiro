@@ -38,26 +38,30 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="login.css">
     <meta charset="UTF=8">
     <meta http-equiv="X-UA-Compatible" content=IE-edge>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 </head>
 <body>
-    <h1>Entrar</h1>
-    <form action="" method="POST">
+    <div class="form-container">
+    <form class="form" action="" method="POST">
+        <h1>Faça seu Login</h1>
         <p>
-        <label>E-mail</label>
-        <input type="text" name="email">
+        <input type="text" name="email" placeholder="E-mail">
         </p>
         
         <p>
-        <label>Senha</label>
-        <input type="password" name="senha">
+        <input type="password" name="senha" placeholder="Senha">
         </p>
         <p>
-        <button type="submit">Entrar</button>
+        <button class="form-button" type="submit">LOGAR</button>
+        </p>
+        <p>
+        você não tem uma conta ainda?<a class="cadastrar-a" href=""> Cadastrar-se</a>
         </p>
     </form>
+    </div>
 </body>
 </html>
