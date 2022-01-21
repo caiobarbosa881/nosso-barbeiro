@@ -47,21 +47,24 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 <body>
     <div class="form-container">
     <form class="form" action="" method="POST">
-        <h1>Faça seu Login</h1>
-        <p>
-        <input type="text" name="email" placeholder="E-mail">
-        </p>
-        
-        <p>
-        <input type="password" name="senha" placeholder="Senha">
-        </p>
-        <p>
+        <h2>Bem vindo</h2>
+        <label class="field field_v3">
+    <input type="text" name="email" class="field__input" placeholder="Digite seu e-mail">
+    <span class="field__label-wrap">
+      <span class="field__label">E-mail</span>
+    </span>
+  </label>
+    <label class="field field_v3">
+    <input type="password" name="senha" class="field__input inputs" placeholder="Digite sua senha">
+    <span class="field__label-wrap">
+      <span class="field__label">Senha</span>
+    </span>
+  </label>    
         <button class="form-button" type="submit">LOGAR</button>
-        </p>
-        <p>
+        <p class="cadastrar-p">
         você não tem uma conta ainda?<a class="cadastrar-a" href=""> Cadastrar-se</a>
         </p>
     </form>
-    </div>
+</div>
 </body>
 </html>

@@ -4,24 +4,41 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Cadastrar</title>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF=8">
+    <meta http-equiv="X-UA-Compatible" content=IE-edge>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
     </head>
     <body>
-        <h1>Cadastrar Usuário</h1>
         <?php 
         if(isset($_SESSION['msg'])){
             echo $_SESSION['msg'];
             unset ($_SESSION['msg']);
         }
         ?>
-        <form method="POST" action="processa.php">
-            <label>Nome:</label>
-            <input type="text" name="nome" placeholder="Digite o nome completo">   
 
-            <input type="email" name="email" placeholder="Digite o seu email">   
+        <div class="form-container">
+    <form class="form" action="processa.php" method="POST">
+        <h2>Faça seu Cadastro</h2>
+        <label class="field field_v3">
+    <input type="email" name="email" class="field__input" placeholder="Digite um e-mail">
+    <span class="field__label-wrap">
+      <span class="field__label">Nome</span>
+    </span>
+  </label>
+    <label class="field field_v3">
+    <input type="password" name="senha" class="field__input inputs" placeholder="Digite uma senha">
+    <span class="field__label-wrap">
+      <span class="field__label">Senha</span>
+    </span>
+  </label>    
+        <button class="form-button" value="Cadastrar" type="submit">CADASTRAR-SE</button>
+    </form>
+</div>
 
-            <input type="submit" value="Cadastrar">
-        </form>
+
+
+
     </body>
 </html>

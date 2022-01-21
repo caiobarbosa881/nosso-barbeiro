@@ -2,13 +2,12 @@
 session_start();
 include_once("conexao.php");
 
-$nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+$senha = filter_input(INPUT_POST, 'senha');
 
-echo "Nome: $nome";
 echo "Nome: $email";
 
-$result_usuario = "INSERT INTO usuarios (nome, email) VALUES('$nome', '$email')";
+$result_usuario = "INSERT INTO usuarios (email, senha) VALUES('$email', '$senha')";
 $resultado_usuario = mysqli_query($mysqli, $result_usuario);
 
 if(mysqli_insert_id($conn)) {
