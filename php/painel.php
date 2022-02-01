@@ -13,7 +13,7 @@ include('protect.php');
     <title>Painel</title>
 </head>
 <body>
-    Bem vindo ao Painel, <?php echo $_SESSION['nome']; ?>
+    Bem vindo ao Painel, estamos testando esse sistema de login e senha com PHP, seu nome inserido vai aparecer a seguir. <?php echo $_SESSION['nome']; ?>
    
 
     <p>
